@@ -1,0 +1,172 @@
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex: 1;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.menu li:last-of-type {
+  background-color: #ffcd2c;
+}
+
+.menu li:hover, .menu li a:hover {
+  cursor: pointer;
+  color: #4c57fb;
+}
+
+.menu li a {
+  text-decoration: none;
+}
+
+.menu li a:visited {
+  color: inherit;
+}
+
+#logo {
+  height: 25px;
+}
+
+section {
+  display: flex;
+}
+
+.section-1 {
+  background-color: #3E5AFF;
+}
+
+.title-wrapper {
+  margin-bottom: 40px;
+}
+
+.title {
+  color: white;
+  font-weight: 500;
+  font-size: 39px;
+}
+
+.subtitle {
+  color: white;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 22px;
+}
+
+.left-side {
+  padding: 70px 120px 70px 70px;
+}
+
+.right-side {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-image {
+  height: 192px;
+  width: 100%;
+  background-image: url('https://www.allwomen.tech/wp-content/uploads/2019/07/allwomen-technology-accademy-courses-woman-barcelona-2.jpg');
+  background-size: cover;
+}
+
+.bottom-image {
+  flex: 1;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://www.allwomen.tech/wp-content/uploads/2020/03/allwomen-data-science-product-management-user-experience-bootcamps.jpg');
+}
+
+.section-2 {
+  border-top: 1px solid black;
+}
+
+.section-2 p {
+  font-size: 20px;
+  padding-left: 70px;
+  width: 70%;
+}
+
+.section-3 {
+  border-top: 1px solid black;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+.section-3 p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 33%;
+}
+
+.animation-wrapper {
+  width: 150px;
+}
+
+.subsection h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ff642e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-4 {
+  justify-content: center;
+  margin: 40px 0 60px;
+}
+
+#browse-courses-link, #why-allwomen-link {
+  font-weight: 500;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+#browse-courses-link {
+  color: #4c57fb;
+  border: 1px solid #4c57fb;
+  background-color: white;
+}
+
+#browse-courses-link:hover {
+  color: white;
+  border-color: white;
+  background-color: #4c57fb;
+}
+
+#why-allwomen-link {
+  color: #ff642e;
+  border: 1px solid #ff642e;
+  background-color: white;
+}
+
+#why-allwomen-link:hover {
+  color: white;
+  border-color: 1px solid white;
+  background-color: #ff642e;
+}
