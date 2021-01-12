@@ -1,5 +1,6 @@
 header {
   background-color: white;
+  min-height: 60px;
   display: flex;
   align-items: center;
   position: sticky;
@@ -84,22 +85,6 @@ section {
   flex-direction: column;
 }
 
-@media (max-width: 768px) and (min-width: 481px) {
-  .left-side, .right-side {
-    width: 100%;
-  }
-}
-
-@media (min-width: 481px) {
-  .left-side {
-    width: 66.6%;
-  }
-
-  .right-side {
-    width: 33.3%;
-  }
-}
-
 .top-image {
   height: 192px;
   width: 100%;
@@ -113,7 +98,7 @@ section {
   width: 100%;
   background-size: cover;
   background-image: url('https://www.allwomen.tech/wp-content/uploads/2020/03/allwomen-data-science-product-management-user-experience-bootcamps.jpg');
-  background-position: top left;
+  background-position: top center;
   padding: 0% 0% 80% 0%;
 }
 
@@ -196,4 +181,46 @@ section {
   color: white;
   border-color: 1px solid white;
   background-color: #ff642e;
+}
+
+
+@media (max-width: 548px) {
+  .menu {
+    display: none;
+  }
+  .section-1, .section-3 {
+    flex-direction: column;
+  }
+  .left-side {
+    padding: 20px;
+    width: unset;
+  }
+  .right-side {
+    width: 100%;
+  }
+  .subsection {
+    width: unset;
+  }
+}
+
+@media (min-width: 549px) and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .left-side {
+    padding: 20px;
+  }
+  .left-side, .right-side {
+    width: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .left-side {
+    width: 66.6%;
+  }
+
+  .right-side {
+    width: 33.3%;
+  }
 }
