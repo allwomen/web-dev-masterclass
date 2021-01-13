@@ -183,6 +183,13 @@ section {
   background-color: #ff642e;
 }
 
+/*
+ * These are the media queries used to define responsiveness
+ * Mobile phones nowadays have bigger and bigger resolutions (up to 2560px and even more), but it's safe to say
+ * the average is 480 as the "smallest width threshold" and somewhere around 800-900px for the "biggest width".
+ * In this case, I'm applying my smallest width threshold to devices with screen size width up to 548px (max), i.e.
+ * only a device with screen size smaller than 548px will get these rules applied
+ */
 
 @media (max-width: 548px) {
   .menu {
@@ -203,6 +210,7 @@ section {
   }
 }
 
+/* These CSS rules will be applied when the device screen has a width between 549px and 768px */
 @media (min-width: 549px) and (max-width: 768px) {
   .menu {
     display: none;
@@ -215,6 +223,7 @@ section {
   }
 }
 
+/* These CSS rules will be applied when the device screen has a width between above 758px */
 @media (min-width: 769px) {
   .left-side {
     width: 66.6%;
